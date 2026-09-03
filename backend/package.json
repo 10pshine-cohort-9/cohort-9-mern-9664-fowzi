@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/tests/*.test.js --exit"
+    "test": "mocha src/tests/*.test.js --exit --timeout 5000"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +20,15 @@
     "pino-http": "^11.0.0"
   },
   "devDependencies": {
-    "chai": "^6.2.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^26.4.1",
+    "chai": "^4.3.10",
     "mocha": "^11.8.0",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "sinon": "^17.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
   }
 }
